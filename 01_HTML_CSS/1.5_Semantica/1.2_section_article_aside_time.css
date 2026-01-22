@@ -1,0 +1,52 @@
+/*
+    CSS para exemplo de section, article, aside e time
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+article {
+    background: #1976d2;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+aside {
+    background: #ff9800;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+time {
+    display: block;
+    color: #fffde7;
+    font-size: 0.95em;
+    margin-top: 8px;
+}
