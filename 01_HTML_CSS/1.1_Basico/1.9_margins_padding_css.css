@@ -1,0 +1,49 @@
+/*
+    CSS externo para o exemplo: Margins e Padding no CSS
+    Demonstra visualmente a diferença entre margin e padding.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.exemplo {
+    background: #e3f2fd;
+    border: 2px solid #1976d2;
+    margin-bottom: 16px;
+    width: 320px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.exemplo-margin {
+    margin: 32px auto;
+}
+
+.exemplo-padding {
+    padding: 32px;
+}
+
+.exemplo-margin-padding {
+    margin: 24px auto;
+    padding: 24px;
+}

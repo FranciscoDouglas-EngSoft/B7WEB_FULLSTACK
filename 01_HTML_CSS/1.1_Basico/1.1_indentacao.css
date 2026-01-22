@@ -1,0 +1,42 @@
+/*
+    Arquivo CSS para o exemplo: O que é Indentação?
+    Este CSS serve apenas para estilizar o exemplo visual da lista.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #005580;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+}
+
+.exemplo-indentacao {
+    background: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    padding: 16px 32px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.exemplo-indentacao li {
+    margin-bottom: 6px;
+}
+
+pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+}

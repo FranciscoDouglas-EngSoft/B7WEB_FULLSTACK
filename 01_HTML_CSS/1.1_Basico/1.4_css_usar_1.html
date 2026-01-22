@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é e como usar o CSS? (1/2)</title>
+    <!--
+        Exemplo explicativo sobre o que é CSS e como utilizá-lo.
+        Este arquivo mostra como aplicar CSS de três formas: inline, interno e externo.
+    -->
+    <link rel="stylesheet" href="1.4_css_usar_1.css">
+    <style>
+        /* CSS Interno: Aplica estilos diretamente no documento HTML */
+        .interno {
+            color: #1976d2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O que é CSS?</h1>
+        <p>CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).</p>
+    </header>
+    <main>
+        <section>
+            <h2>Como usar CSS?</h2>
+            <ul>
+                <li><strong>Inline:</strong> <span style="color: #d32f2f; font-weight: bold;">Estilo aplicado diretamente no elemento.</span></li>
+                <li><strong>Interno:</strong> <span class="interno">Estilo definido dentro da tag &lt;style&gt; no &lt;head&gt;.</span></li>
+                <li><strong>Externo:</strong> <span class="externo">Estilo definido em um arquivo .css separado.</span></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Exemplo Prático</h2>
+            <p style="background: #fff9c4; padding: 8px;">Este parágrafo usa <strong>CSS inline</strong>.</p>
+            <p class="interno">Este parágrafo usa <strong>CSS interno</strong>.</p>
+            <p class="externo">Este parágrafo usa <strong>CSS externo</strong>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Exemplo criado para aula: O que é e como usar o CSS? (1/2)</p>
+    </footer>
+</body>
+</html>

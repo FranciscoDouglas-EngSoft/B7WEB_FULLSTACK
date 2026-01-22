@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas: object-fit</title>
+    <!--
+        Exemplo de uso da propriedade object-fit para imagens responsivas.
+    -->
+    <link rel="stylesheet" href="1.4_imagens_responsivas_object_fit.css">
+</head>
+<body>
+    <header>
+        <h1>Imagens Responsivas: object-fit</h1>
+        <p>Use <code>object-fit</code> para controlar o redimensionamento de imagens.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Exemplo Visual</h2>
+            <div class="img-container">
+                <img src="img-exemplo-desktop.jpg" alt="Exemplo object-fit: cover" class="cover">
+                <img src="img-exemplo-desktop.jpg" alt="Exemplo object-fit: contain" class="contain">
+            </div>
+            <ul>
+                <li><b>Cover:</b> Preenche o container, pode cortar a imagem.</li>
+                <li><b>Contain:</b> Ajusta a imagem para caber inteira no container.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Resumo</h2>
+            <ul>
+                <li><code>object-fit: cover</code> mantém o aspecto e cobre todo o espaço.</li>
+                <li><code>object-fit: contain</code> mantém o aspecto e mostra a imagem inteira.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Exemplo criado para aula: Imagens Responsivas: object-fit</p>
+    </footer>
+</body>
+</html>

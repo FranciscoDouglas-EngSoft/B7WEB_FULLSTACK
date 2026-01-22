@@ -1,0 +1,47 @@
+/*
+    CSS para o exemplo: Tags Básicas (1/2)
+    Estilização simples para destacar as principais tags.
+*/
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #1976d2;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+h1, h2, h3 {
+    color: #1976d2;
+}
+
+ul, ol {
+    margin-bottom: 16px;
+}
+
+a {
+    color: #d32f2f;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 12px 0;
+    max-width: 100%;
+    border-radius: 4px;
+}

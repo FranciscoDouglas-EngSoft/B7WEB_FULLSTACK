@@ -1,0 +1,63 @@
+/*
+    CSS externo para o exemplo: Unidades relativas (viewport)
+    Demonstra uso de vw, vh, vmin, vmax.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #512da8;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.vw {
+    width: 50vw;
+    background: #d32f2f;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.vh {
+    height: 20vh;
+    background: #388e3c;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.vmin {
+    width: 10vmin;
+    height: 10vmin;
+    background: #1976d2;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 8px;
+    display: inline-block;
+}
+
+.vmax {
+    width: 10vmax;
+    height: 10vmax;
+    background: #ff9800;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 8px;
+    display: inline-block;
+}

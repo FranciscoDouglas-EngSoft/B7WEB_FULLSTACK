@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança no CSS</title>
+    <!--
+        Exemplo de herança de propriedades no CSS.
+        Mostra como elementos filhos herdam estilos dos pais.
+    -->
+    <link rel="stylesheet" href="1.1_heranca.css">
+</head>
+<body>
+    <header>
+        <h1>Herança no CSS</h1>
+        <p>Como funciona a herança de estilos.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Exemplo Visual</h2>
+            <div class="pai">
+                <p>Este parágrafo herda a cor do elemento pai.</p>
+                <div>
+                    <p>Este também herda a cor do elemento pai.</p>
+                </div>
+            </div>
+            <div class="pai-nao-herda">
+                <p style="color: initial;">Este parágrafo não herda a cor do pai.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Explicação</h2>
+            <ul>
+                <li>Propriedades como <code>color</code> e <code>font-family</code> são herdadas.</li>
+                <li>Propriedades como <code>margin</code> e <code>border</code> não são herdadas.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Exemplo criado para aula: Herança</p>
+    </footer>
+</body>
+</html>

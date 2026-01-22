@@ -1,0 +1,64 @@
+/*
+    CSS externo para o exemplo: Formatando formulários no CSS (2/2)
+    Estilização avançada de formulário.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #512da8;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+form {
+    margin-top: 16px;
+    background: #e3f2fd;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+label {
+    font-weight: bold;
+    color: #512da8;
+    margin-right: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    border: 1px solid #512da8;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: 220px;
+}
+
+button {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #512da8;
+}

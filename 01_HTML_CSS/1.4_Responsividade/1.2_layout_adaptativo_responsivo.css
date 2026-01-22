@@ -1,0 +1,59 @@
+/*
+    CSS externo para o exemplo: Layout Adaptativo vs Responsivo
+    Demonstra as diferenças entre as abordagens.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #512da8;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+    background: #fff;
+    margin: 16px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.adaptativo {
+    background: #d32f2f;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 300px;
+}
+
+/* Adaptativo: muda em breakpoints fixos */
+@media (max-width: 600px) {
+    .adaptativo {
+        width: 100%;
+    }
+}
+
+.responsivo {
+    background: #388e3c;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 60%;
+    min-width: 200px;
+    max-width: 100%;
+}
+
+/* Responsivo: adapta continuamente */
+@media (max-width: 600px) {
+    .responsivo {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validações Nativas 2</title>
+    <!--
+        Exemplo de validação nativa de formulário HTML5 (pattern, min, max, step).
+    -->
+    <link rel="stylesheet" href="1.18_validacoes_nativas_2.css">
+</head>
+<body>
+    <header>
+        <h1>Validações Nativas 2</h1>
+        <p>Validação de padrões, números e intervalos.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Exemplo de Validação</h2>
+            <form>
+                <label for="telefone">Telefone (padrão):</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\d{2}-\d{5}-\d{4}" placeholder="11-91234-5678"><br><br>
+                <label for="idade">Idade (18 a 99):</label>
+                <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+                <label for="passos">Passos (de 5 em 5):</label>
+                <input type="number" id="passos" name="passos" min="0" max="100" step="5"><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Exemplo criado para aula: Validações Nativas 2</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*
+    CSS externo para o exemplo: Funções min() e max()
+    Demonstra o uso de min() e max() para tamanhos dinâmicos.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #1976d2;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+    background: #fff;
+    margin: 16px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.box-min {
+    background: #388e3c;
+    color: #fff;
+    width: min(90vw, 400px);
+    margin: 0 auto 16px auto;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.box-max {
+    background: #d32f2f;
+    color: #fff;
+    width: max(200px, 40vw);
+    margin: 0 auto 16px auto;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+}

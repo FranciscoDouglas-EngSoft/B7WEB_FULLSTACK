@@ -1,0 +1,39 @@
+/*
+    CSS externo para o exemplo: Cascata
+    Demonstra ordem de aplicação das regras.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #1976d2;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.cascata {
+    color: #d32f2f;
+}
+
+.cascata {
+    color: #388e3c;
+}
+
+.cascata {
+    color: #512da8;
+}

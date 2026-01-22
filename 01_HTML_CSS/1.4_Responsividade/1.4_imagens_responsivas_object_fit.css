@@ -1,0 +1,51 @@
+/*
+    CSS externo para o exemplo: Imagens Responsivas object-fit
+    Demonstra o uso de object-fit: cover e contain.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #d32f2f;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+    background: #fff;
+    margin: 16px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.img-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.img-container img {
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid #1976d2;
+    background: #eee;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.contain {
+    object-fit: contain;
+    background: #fff3e0;
+}

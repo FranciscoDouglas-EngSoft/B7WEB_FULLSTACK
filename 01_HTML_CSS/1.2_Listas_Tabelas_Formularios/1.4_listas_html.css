@@ -1,0 +1,51 @@
+/*
+    CSS externo para o exemplo: Listas no HTML
+    Estiliza listas ordenadas, não ordenadas e de definição.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 32px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 32px;
+}
+
+dl {
+    margin-left: 32px;
+}
+
+dt {
+    font-weight: bold;
+    color: #1976d2;
+}
+
+dd {
+    margin-bottom: 8px;
+    color: #333;
+}

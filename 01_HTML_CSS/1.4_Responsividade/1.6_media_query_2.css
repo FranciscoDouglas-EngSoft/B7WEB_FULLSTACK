@@ -1,0 +1,58 @@
+/*
+    CSS externo para o exemplo: CSS @media Como funciona 2
+    Demonstra múltiplas media queries.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #512da8;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+    background: #fff;
+    margin: 16px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.caixa {
+    background: #388e3c;
+    color: #fff;
+    padding: 32px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background 0.3s, font-size 0.3s;
+}
+
+@media (max-width: 600px) {
+    .caixa {
+        background: #d32f2f;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .caixa {
+        background: #1976d2;
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 901px) {
+    .caixa {
+        background: #388e3c;
+        font-size: 1.8em;
+    }
+}

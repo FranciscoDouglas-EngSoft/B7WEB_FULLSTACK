@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas: picture e source</title>
+    <!--
+        Exemplo de uso das tags <picture> e <source> para imagens responsivas.
+    -->
+    <link rel="stylesheet" href="1.3_imagens_responsivas_picture_source.css">
+</head>
+<body>
+    <header>
+        <h1>Imagens Responsivas: picture e source</h1>
+        <p>Utilize <code>&lt;picture&gt;</code> e <code>&lt;source&gt;</code> para servir imagens diferentes conforme o tamanho da tela.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Exemplo Visual</h2>
+            <picture>
+                <source media="(max-width: 600px)" srcset="img-exemplo-mobile.jpg">
+                <source media="(min-width: 601px)" srcset="img-exemplo-desktop.jpg">
+                <img src="img-exemplo-desktop.jpg" alt="Exemplo de imagem responsiva">
+            </picture>
+            <p class="legenda">Redimensione a janela para ver a troca de imagem.</p>
+        </section>
+        <section>
+            <h2>Resumo</h2>
+            <ul>
+                <li><code>&lt;picture&gt;</code> permite múltiplas fontes de imagem.</li>
+                <li><code>&lt;source&gt;</code> define condições para cada imagem.</li>
+                <li>O <code>&lt;img&gt;</code> é o fallback.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Exemplo criado para aula: Imagens Responsivas: picture e source</p>
+    </footer>
+</body>
+</html>

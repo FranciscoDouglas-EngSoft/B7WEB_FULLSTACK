@@ -1,0 +1,73 @@
+/*
+    CSS externo para o exemplo: Hack CSS Altura relativa à largura
+    Demonstra aspect-ratio e padding-top para proporção.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+    background: #fff;
+    margin: 16px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.box-aspect {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 16/9;
+    background: #1976d2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px auto;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.box-padding {
+    width: 100%;
+    max-width: 400px;
+    background: #d32f2f;
+    color: #fff;
+    position: relative;
+    margin: 0 auto 16px auto;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.box-padding::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 */
+}
+
+.box-padding {
+    position: relative;
+}
+
+.box-padding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

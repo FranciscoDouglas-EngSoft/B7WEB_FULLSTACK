@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validações Nativas 1</title>
+    <!--
+        Exemplo de validação nativa de formulário HTML5 (required, type, minlength, maxlength).
+    -->
+    <link rel="stylesheet" href="1.17_validacoes_nativas_1.css">
+</head>
+<body>
+    <header>
+        <h1>Validações Nativas 1</h1>
+        <p>Como usar validações automáticas do HTML5.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Exemplo de Validação</h2>
+            <form>
+                <label for="nome">Nome (obrigatório):</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email (obrigatório):</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="senha">Senha (mín. 6, máx. 12):</label>
+                <input type="password" id="senha" name="senha" minlength="6" maxlength="12" required><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Exemplo criado para aula: Validações Nativas 1</p>
+    </footer>
+</body>
+</html>

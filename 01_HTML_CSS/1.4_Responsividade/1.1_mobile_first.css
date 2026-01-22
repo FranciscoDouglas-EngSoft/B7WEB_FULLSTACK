@@ -1,0 +1,53 @@
+/*
+    CSS externo para o exemplo: Mobile First
+    Layout pensado primeiro para mobile.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+    background: #fff;
+    margin: 16px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.box {
+    background: #1976d2;
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/*
+    A partir de 600px, muda para layout em linha (desktop/tablet)
+*/
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+    .box {
+        flex: 1;
+    }
+}

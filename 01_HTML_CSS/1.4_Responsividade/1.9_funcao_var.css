@@ -1,0 +1,43 @@
+/*
+    CSS externo para o exemplo: Função var()
+    Demonstra o uso de variáveis CSS customizadas.
+*/
+
+:root {
+    --cor-primaria: #1976d2;
+    --cor-secundaria: #fff;
+    --espacamento: 24px;
+    --raio-borda: 8px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: var(--espacamento);
+    text-align: center;
+}
+
+main {
+    padding: var(--espacamento);
+    background: #fff;
+    margin: var(--espacamento) auto;
+    max-width: 700px;
+    border-radius: var(--raio-borda);
+    box-shadow: 0 2px 8px #0001;
+}
+
+.caixa {
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: var(--espacamento);
+    border-radius: var(--raio-borda);
+    text-align: center;
+    font-size: 1.2em;
+}
