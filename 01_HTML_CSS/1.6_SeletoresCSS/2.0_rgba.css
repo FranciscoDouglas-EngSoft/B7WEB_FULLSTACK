@@ -1,0 +1,37 @@
+/*
+    CSS para exemplo de cor RGBA
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #7b1fa2;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.caixa {
+    background: rgba(123, 31, 162, 0.2);
+    color: #7b1fa2;
+    padding: 24px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    margin: 32px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 8px #0002;
+}

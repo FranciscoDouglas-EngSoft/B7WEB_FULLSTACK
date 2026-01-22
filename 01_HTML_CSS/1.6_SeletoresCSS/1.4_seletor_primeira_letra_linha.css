@@ -1,0 +1,37 @@
+/*
+    CSS para seletor de primeira letra e primeira linha
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #512da8;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.destaque::first-letter {
+    font-size: 2em;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.destaque::first-line {
+    background: #ede7f6;
+    color: #512da8;
+}

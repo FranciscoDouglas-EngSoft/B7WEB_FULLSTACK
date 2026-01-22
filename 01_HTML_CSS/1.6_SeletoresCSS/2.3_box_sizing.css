@@ -1,0 +1,45 @@
+/*
+    CSS para exemplo de box-sizing
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #c62828;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.caixa {
+    width: 300px;
+    padding: 24px;
+    border: 8px solid #c62828;
+    margin: 24px auto;
+    background: #ffcdd2;
+    color: #c62828;
+    font-size: 1.1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.border-content {
+    box-sizing: content-box;
+    background: #fffde7;
+    color: #fbc02d;
+    border-color: #fbc02d;
+}

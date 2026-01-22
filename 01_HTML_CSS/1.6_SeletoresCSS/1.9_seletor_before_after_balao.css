@@ -1,0 +1,49 @@
+/*
+    CSS para ::before e ::after criando balão de fala
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #0288d1;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.balao {
+    display: inline-block;
+    position: relative;
+    background: #0288d1;
+    color: #fff;
+    padding: 18px 32px;
+    border-radius: 24px;
+    margin: 40px auto;
+    font-size: 1.2em;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.balao::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -18px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 18px solid #0288d1;
+}

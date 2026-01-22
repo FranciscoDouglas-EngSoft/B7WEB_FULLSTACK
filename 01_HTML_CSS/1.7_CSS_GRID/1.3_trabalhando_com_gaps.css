@@ -1,0 +1,41 @@
+/*
+    CSS para uso de gap, row-gap e column-gap no CSS Grid
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.grid-gap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 8px; /* row-gap column-gap */
+    margin: 32px 0;
+}
+
+.grid-gap > div {
+    background: #d32f2f;
+    color: #fff;
+    padding: 32px 0;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+}

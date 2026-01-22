@@ -1,0 +1,52 @@
+/*
+    CSS para seletor :nth-child()
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #fbc02d;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.lista-nth {
+    list-style: decimal;
+    padding: 0 0 0 32px;
+    margin: 24px auto;
+    max-width: 300px;
+}
+
+.lista-nth li {
+    background: #fffde7;
+    color: #fbc02d;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+.lista-nth li:nth-child(even) {
+    background: #388e3c;
+    color: #fff;
+}
+
+.lista-nth li:nth-child(odd) {
+    background: #1976d2;
+    color: #fff;
+}

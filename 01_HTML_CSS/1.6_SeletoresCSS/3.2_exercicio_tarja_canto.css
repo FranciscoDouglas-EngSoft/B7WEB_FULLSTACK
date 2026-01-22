@@ -1,0 +1,52 @@
+/*
+    CSS para tarja de canto com ::before
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.caixa-tarja {
+    position: relative;
+    background: #fffde7;
+    color: #d32f2f;
+    padding: 48px 0;
+    border-radius: 12px;
+    font-size: 1.2em;
+    margin: 40px auto;
+    max-width: 350px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.caixa-tarja::before {
+    content: 'Novo';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d32f2f;
+    color: #fff;
+    padding: 6px 24px;
+    border-radius: 0 0 12px 0;
+    font-size: 0.95em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0002;
+}

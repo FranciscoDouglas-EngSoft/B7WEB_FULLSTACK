@@ -1,0 +1,39 @@
+/*
+    CSS para exemplo de citações
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+blockquote {
+    border-left: 4px solid #1976d2;
+    margin: 24px 0;
+    padding: 12px 24px;
+    background: #e3f2fd;
+    color: #1976d2;
+    font-style: italic;
+}
+
+q {
+    color: #d32f2f;
+    font-style: italic;
+}

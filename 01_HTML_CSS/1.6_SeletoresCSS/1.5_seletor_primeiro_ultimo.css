@@ -1,0 +1,54 @@
+/*
+    CSS para seletor de primeiro e último elemento
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #c62828;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 24px auto;
+    max-width: 300px;
+}
+
+.lista li {
+    background: #ffcdd2;
+    color: #c62828;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+.lista li:first-child {
+    background: #388e3c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lista li:last-child {
+    background: #1976d2;
+    color: #fff;
+    font-weight: bold;
+}

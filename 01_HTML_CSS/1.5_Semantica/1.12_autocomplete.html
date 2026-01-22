@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoComplete</title>
+    <!--
+        Exemplo de uso do atributo autocomplete em inputs.
+    -->
+    <link rel="stylesheet" href="1.12_autocomplete.css">
+</head>
+<body>
+    <header>
+        <h1>AutoComplete</h1>
+    </header>
+    <main>
+        <form autocomplete="on">
+            <label>Nome: <input type="text" name="nome" autocomplete="name"></label><br><br>
+            <label>Email: <input type="email" name="email" autocomplete="email"></label><br><br>
+            <label>Senha: <input type="password" name="senha" autocomplete="current-password"></label><br><br>
+        </form>
+        <p>O navegador pode sugerir valores já digitados anteriormente.</p>
+    </main>
+    <footer>
+        <p>Exemplo de uso do atributo autocomplete.</p>
+    </footer>
+</body>
+</html>

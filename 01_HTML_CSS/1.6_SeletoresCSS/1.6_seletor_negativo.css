@@ -1,0 +1,56 @@
+/*
+    CSS para seletor negativo :not()
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #00897b;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 24px auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu li {
+    background: #b2dfdb;
+    color: #00897b;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: background 0.2s;
+}
+
+.menu li.ativo {
+    background: #00897b;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu li:not(.ativo) {
+    border: 2px dashed #00897b;
+    background: #fffde7;
+}

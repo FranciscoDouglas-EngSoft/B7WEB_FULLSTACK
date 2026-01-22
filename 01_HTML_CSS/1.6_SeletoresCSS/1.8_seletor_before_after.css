@@ -1,0 +1,38 @@
+/*
+    CSS para seletores ::before e ::after
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #6d4c41;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.decorado::before {
+    content: '→ ';
+    color: #6d4c41;
+    font-weight: bold;
+}
+
+.decorado::after {
+    content: ' ←';
+    color: #6d4c41;
+    font-weight: bold;
+}

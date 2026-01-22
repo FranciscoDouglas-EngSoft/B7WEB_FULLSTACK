@@ -1,0 +1,32 @@
+/*
+    CSS para exemplo de tag video
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #388e3c;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+main {
+    background: #fff;
+    margin: 24px auto;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+video {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+    margin-bottom: 16px;
+}
