@@ -1,0 +1,30 @@
+<!-- Exemplo 03: Selecionando Elementos 2 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 03 - Selecionando Elementos 2</title>
+  <link rel="stylesheet" href="Exemplo_03_Selecionando_Elementos_2.css">
+</head>
+<body>
+  <h1>Exemplo 03 - Selecionando Elementos 2</h1>
+  <ul class="lista">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <button id="listar">Listar Itens</button>
+  <div id="saida"></div>
+  <script src="Exemplo_03_Selecionando_Elementos_2.js"></script>
+  <script>
+    document.getElementById('listar').onclick = function() {
+      const itens = document.querySelectorAll('.lista li');
+      let texto = '';
+      itens.forEach((el, i) => {
+        texto += `Item ${i+1}: ${el.textContent}<br>`;
+      });
+      document.getElementById('saida').innerHTML = texto;
+    };
+  </script>
+</body>
+</html>

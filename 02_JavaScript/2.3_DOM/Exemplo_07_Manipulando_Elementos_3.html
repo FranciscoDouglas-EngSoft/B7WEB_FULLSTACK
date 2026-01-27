@@ -1,0 +1,35 @@
+<!-- Exemplo 07: Manipulando Elementos 3 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 07 - Manipulando Elementos 3</title>
+  <link rel="stylesheet" href="Exemplo_07_Manipulando_Elementos_3.css">
+</head>
+<body>
+  <h1>Exemplo 07 - Manipulando Elementos 3</h1>
+  <div id="container">
+    <p id="paragrafo">Este parágrafo pode ser removido.</p>
+  </div>
+  <button id="remover">Remover Parágrafo</button>
+  <button id="restaurar">Restaurar</button>
+  <script src="Exemplo_07_Manipulando_Elementos_3.js"></script>
+  <script>
+    const container = document.getElementById('container');
+    const remover = document.getElementById('remover');
+    const restaurar = document.getElementById('restaurar');
+    remover.onclick = function() {
+      const p = document.getElementById('paragrafo');
+      if (p) p.remove();
+    };
+    restaurar.onclick = function() {
+      if (!document.getElementById('paragrafo')) {
+        const p = document.createElement('p');
+        p.id = 'paragrafo';
+        p.textContent = 'Este parágrafo pode ser removido.';
+        container.appendChild(p);
+      }
+    };
+  </script>
+</body>
+</html>

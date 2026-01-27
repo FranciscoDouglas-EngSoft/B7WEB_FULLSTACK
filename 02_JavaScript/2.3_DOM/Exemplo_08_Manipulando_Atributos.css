@@ -1,0 +1,41 @@
+/* Exemplo 08: Manipulando Atributos
+   Demonstra como acessar, modificar e remover atributos de elementos HTML via JavaScript.
+*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 40px;
+}
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  border: 2px solid #bbb;
+  margin-bottom: 12px;
+  display: block;
+}
+button {
+  padding: 8px 18px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  background: #1890ff;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #40a9ff;
+}
+#saida {
+  margin-top: 18px;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  padding: 12px;
+  border-radius: 4px;
+  min-height: 32px;
+  font-size: 1.1em;
+  color: #ad8b00;
+}

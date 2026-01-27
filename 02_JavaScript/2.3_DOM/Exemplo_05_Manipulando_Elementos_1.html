@@ -1,0 +1,27 @@
+<!-- Exemplo 05: Manipulando Elementos 1 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 05 - Manipulando Elementos 1</title>
+  <link rel="stylesheet" href="Exemplo_05_Manipulando_Elementos_1.css">
+</head>
+<body>
+  <h1>Exemplo 05 - Manipulando Elementos 1</h1>
+  <div id="texto">Texto original do elemento.</div>
+  <button id="alterar">Alterar Texto</button>
+  <button id="resetar">Resetar</button>
+  <script src="Exemplo_05_Manipulando_Elementos_1.js"></script>
+  <script>
+    const texto = document.getElementById('texto');
+    document.getElementById('alterar').onclick = function() {
+      texto.textContent = 'O texto foi alterado via JavaScript!';
+      texto.style.background = '#b7eb8f';
+    };
+    document.getElementById('resetar').onclick = function() {
+      texto.textContent = 'Texto original do elemento.';
+      texto.style.background = '#e6f7ff';
+    };
+  </script>
+</body>
+</html>

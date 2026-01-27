@@ -1,0 +1,34 @@
+<!-- Exemplo 08: Manipulando Atributos -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 08 - Manipulando Atributos</title>
+  <link rel="stylesheet" href="Exemplo_08_Manipulando_Atributos.css">
+</head>
+<body>
+  <h1>Exemplo 08 - Manipulando Atributos</h1>
+  <img id="imagem" src="https://via.placeholder.com/120" alt="Imagem de exemplo">
+  <button id="mudar">Mudar SRC</button>
+  <button id="remover">Remover ALT</button>
+  <button id="resetar">Resetar</button>
+  <div id="saida"></div>
+  <script src="Exemplo_08_Manipulando_Atributos.js"></script>
+  <script>
+    const img = document.getElementById('imagem');
+    document.getElementById('mudar').onclick = function() {
+      img.setAttribute('src', 'https://placehold.co/120x120/orange/white');
+      document.getElementById('saida').textContent = 'SRC alterado!';
+    };
+    document.getElementById('remover').onclick = function() {
+      img.removeAttribute('alt');
+      document.getElementById('saida').textContent = 'ALT removido!';
+    };
+    document.getElementById('resetar').onclick = function() {
+      img.setAttribute('src', 'https://via.placeholder.com/120');
+      img.setAttribute('alt', 'Imagem de exemplo');
+      document.getElementById('saida').textContent = 'Atributos restaurados!';
+    };
+  </script>
+</body>
+</html>

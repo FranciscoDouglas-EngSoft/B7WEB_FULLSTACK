@@ -1,0 +1,29 @@
+<!-- Exemplo 11: Eventos de Teclado 1 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 11 - Eventos de Teclado 1</title>
+  <link rel="stylesheet" href="Exemplo_11_Eventos_Teclado_1.css">
+</head>
+<body>
+  <h1>Exemplo 11 - Eventos de Teclado 1</h1>
+  <label for="campo">Digite algo:</label>
+  <input type="text" id="campo" autocomplete="off">
+  <div id="saida"></div>
+  <script src="Exemplo_11_Eventos_Teclado_1.js"></script>
+  <script>
+    const campo = document.getElementById('campo');
+    const saida = document.getElementById('saida');
+    campo.addEventListener('keydown', e => {
+      saida.textContent = `Tecla pressionada: ${e.key} (código: ${e.code})`;
+    });
+    campo.addEventListener('keyup', e => {
+      saida.textContent = `Tecla liberada: ${e.key} (código: ${e.code})`;
+    });
+    campo.addEventListener('input', e => {
+      saida.textContent = `Valor atual: ${campo.value}`;
+    });
+  </script>
+</body>
+</html>

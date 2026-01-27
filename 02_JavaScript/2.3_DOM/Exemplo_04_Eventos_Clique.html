@@ -1,0 +1,24 @@
+<!-- Exemplo 04: Eventos de Clique -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 04 - Eventos de Clique</title>
+  <link rel="stylesheet" href="Exemplo_04_Eventos_Clique.css">
+</head>
+<body>
+  <h1>Exemplo 04 - Eventos de Clique</h1>
+  <button id="botao1">Clique em mim!</button>
+  <button id="botao2">Ou em mim!</button>
+  <div id="saida"></div>
+  <script src="Exemplo_04_Eventos_Clique.js"></script>
+  <script>
+    document.getElementById('botao1').onclick = function() {
+      document.getElementById('saida').textContent = 'Você clicou no primeiro botão!';
+    };
+    document.getElementById('botao2').onclick = function() {
+      document.getElementById('saida').textContent = 'Você clicou no segundo botão!';
+    };
+  </script>
+</body>
+</html>

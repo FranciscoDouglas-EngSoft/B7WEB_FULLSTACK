@@ -1,0 +1,5 @@
+INSTALA PRIMEIRO O REACT COM VITE
+npm create vite@latest meu-projeto
+
+INSTALA O TAILWINDCSS COM VITE
+npm i tailwindcss @tailwindcss/vite

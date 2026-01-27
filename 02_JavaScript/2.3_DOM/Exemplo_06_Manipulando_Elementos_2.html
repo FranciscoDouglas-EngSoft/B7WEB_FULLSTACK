@@ -1,0 +1,27 @@
+<!-- Exemplo 06: Manipulando Elementos 2 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 06 - Manipulando Elementos 2</title>
+  <link rel="stylesheet" href="Exemplo_06_Manipulando_Elementos_2.css">
+</head>
+<body>
+  <h1>Exemplo 06 - Manipulando Elementos 2</h1>
+  <div id="container"></div>
+  <button id="inserir">Inserir Parágrafo</button>
+  <button id="limpar">Limpar</button>
+  <script src="Exemplo_06_Manipulando_Elementos_2.js"></script>
+  <script>
+    const container = document.getElementById('container');
+    document.getElementById('inserir').onclick = function() {
+      const p = document.createElement('p');
+      p.textContent = 'Novo parágrafo inserido!';
+      container.appendChild(p);
+    };
+    document.getElementById('limpar').onclick = function() {
+      container.innerHTML = '';
+    };
+  </script>
+</body>
+</html>

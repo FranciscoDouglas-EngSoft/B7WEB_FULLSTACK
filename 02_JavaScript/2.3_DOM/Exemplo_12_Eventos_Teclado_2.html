@@ -1,0 +1,22 @@
+<!-- Exemplo 12: Eventos de Teclado 2 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 12 - Eventos de Teclado 2</title>
+  <link rel="stylesheet" href="Exemplo_12_Eventos_Teclado_2.css">
+</head>
+<body>
+  <h1>Exemplo 12 - Eventos de Teclado 2</h1>
+  <div id="atalho">Pressione Ctrl + Enter para exibir uma mensagem.</div>
+  <div id="saida"></div>
+  <script src="Exemplo_12_Eventos_Teclado_2.js"></script>
+  <script>
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && e.key === 'Enter') {
+        document.getElementById('saida').textContent = 'Atalho Ctrl + Enter detectado!';
+      }
+    });
+  </script>
+</body>
+</html>

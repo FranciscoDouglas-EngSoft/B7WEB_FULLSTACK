@@ -1,0 +1,30 @@
+<!-- Exemplo 09: Manipulando CSS -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 09 - Manipulando CSS</title>
+  <link rel="stylesheet" href="Exemplo_09_Manipulando_CSS.css">
+</head>
+<body>
+  <h1>Exemplo 09 - Manipulando CSS</h1>
+  <div id="caixa">Caixa</div>
+  <button id="cor">Mudar Cor</button>
+  <button id="borda">Mudar Borda</button>
+  <button id="resetar">Resetar</button>
+  <script src="Exemplo_09_Manipulando_CSS.js"></script>
+  <script>
+    const caixa = document.getElementById('caixa');
+    document.getElementById('cor').onclick = () => {
+      caixa.style.background = '#faad14';
+      caixa.style.color = '#fff';
+    };
+    document.getElementById('borda').onclick = () => {
+      caixa.style.border = '3px dashed #d4380d';
+    };
+    document.getElementById('resetar').onclick = () => {
+      caixa.style = '';
+    };
+  </script>
+</body>
+</html>

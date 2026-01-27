@@ -1,0 +1,32 @@
+/* Exemplo 05: Manipulando Elementos 1
+   Demonstra alteração de texto e conteúdo de elementos.
+*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 40px;
+}
+#texto {
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 1.1em;
+  transition: background 0.2s;
+}
+button {
+  padding: 8px 18px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  background: #1890ff;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #40a9ff;
+}

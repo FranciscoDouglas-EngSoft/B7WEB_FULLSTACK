@@ -1,0 +1,23 @@
+<!-- Exemplo 10: Classes -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 10 - Classes</title>
+  <link rel="stylesheet" href="Exemplo_10_Classes.css">
+</head>
+<body>
+  <h1>Exemplo 10 - Classes</h1>
+  <div id="caixa">Caixa</div>
+  <button id="adicionar">Adicionar Classe</button>
+  <button id="remover">Remover Classe</button>
+  <button id="alternar">Alternar Classe</button>
+  <script src="Exemplo_10_Classes.js"></script>
+  <script>
+    const caixa = document.getElementById('caixa');
+    document.getElementById('adicionar').onclick = () => caixa.classList.add('ativo');
+    document.getElementById('remover').onclick = () => caixa.classList.remove('ativo');
+    document.getElementById('alternar').onclick = () => caixa.classList.toggle('ativo');
+  </script>
+</body>
+</html>

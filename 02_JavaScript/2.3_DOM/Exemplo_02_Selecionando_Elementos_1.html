@@ -1,0 +1,29 @@
+<!-- Exemplo 02: Selecionando Elementos 1 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 02 - Selecionando Elementos 1</title>
+  <link rel="stylesheet" href="Exemplo_02_Selecionando_Elementos_1.css">
+</head>
+<body>
+  <h1>Exemplo 02 - Selecionando Elementos 1</h1>
+  <div id="destaque">Elemento com ID "destaque"</div>
+  <div class="ativo">Elemento com classe "ativo"</div>
+  <p>Parágrafo comum</p>
+  <button id="selecionar">Selecionar Elementos</button>
+  <div id="saida"></div>
+  <script src="Exemplo_02_Selecionando_Elementos_1.js"></script>
+  <script>
+    document.getElementById('selecionar').onclick = function() {
+      const id = document.getElementById('destaque');
+      const classe = document.querySelector('.ativo');
+      const tags = document.getElementsByTagName('p');
+      document.getElementById('saida').innerHTML =
+        `<b>ID:</b> ${id.textContent}<br>` +
+        `<b>Classe:</b> ${classe.textContent}<br>` +
+        `<b>Tag &lt;p&gt;:</b> ${tags[0].textContent}`;
+    };
+  </script>
+</body>
+</html>
